@@ -1,3 +1,2 @@
 #!/bin/bash
-OUTPUT=$(echo $CFILE | sed 's/\.[^.]*$/.o/')
-gcc -c $CFILE -o $OUTPUT
+gcc -c "${CFILE}" -o "$(echo "${CFILE}" | sed 's/.[^.]*$/.o/')"
