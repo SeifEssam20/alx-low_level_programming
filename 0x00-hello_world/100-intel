@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -S "$(basename "$CFILE" .c)".c -o "$(basename "$CFILE" .c)".s
