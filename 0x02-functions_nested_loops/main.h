@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include<stdio.h>
+#include<stdlib.h>
 int print_last_digit(int);
 void jack_bauer(void);
 void times_table(void);
