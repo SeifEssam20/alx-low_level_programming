@@ -1,15 +1,9 @@
 #include "main.h"
-
 /**
-* print_remaining_days - takes a date and prints how many days are
-* left in the year, taking leap years into account
-* @month: month in number format
-* @day: day of month
-* @year: year
-* Return: void
-*/
+ * more_numbers - Prints 10 times the numbers 0 to 14, followed by a new line.
+ */
 
-void print_remaining_days(int month, int day, int year)
+void more_numbers(void)
 {
 int i, j, k ;
 for(j=1; j<=10; j++)
@@ -20,9 +14,9 @@ i = k ;
 if(k > 9)
 {
 _putchar(1+48);
-num = count % 10;
+i = k % 10;
 }
-_putchar(num+48);
+_putchar(i+48);
 }
 _putchar('\n');
 }
