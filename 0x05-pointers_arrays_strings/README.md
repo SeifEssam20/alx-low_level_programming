@@ -1,0 +1,1 @@
+ptr and arrs sucks
