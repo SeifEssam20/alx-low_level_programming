@@ -14,10 +14,10 @@ char *str = argv[0];
 
 while (*str)
 {
-putchar(*str);
+_putchar(*str);
 str++;
 }
-putchar('\n');
+_putchar('\n');
 
 return (0);
 }
