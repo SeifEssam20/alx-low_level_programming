@@ -1,4 +1,5 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -9,44 +10,19 @@
  */
 int main(int argc, char *argv[])
 {
-  int num1, num2, product, i;
+  int num1, num2, product;
 
   if (argc != 3)
     {
-      for (i = 0; "Error\n"[i]; i++)
-	_putchar("Error\n"[i]);
+      printf("Error\n");
       return (1);
     }
 
-  num1 = _atoi(argv[1]);
-  num2 = _atoi(argv[2]);
-  product = num1 * num2 ;
+  num1 = atoi(argv[1]);
+  num2 = atoi(argv[2]);
+  product = num1 * num2;
 
-  if (product < 0)
-    {
-      _putchar('-');
-      product *= -1;
-    }
-
-  if (product == 0)
-    _putchar('0');
-
-  for (i = 1; product / i > 0; i *= 10)
-    {
-      ;
-    }
-
-  i /= 10;
-
-  while (i > 0)
-    {
-      _putchar('0' + (product / i));
-      product %= i;
-      i /= 10;
-    }
-
-  _putchar('\n');
+  printf("%d\n", product);
 
   return (0);
 }
-
