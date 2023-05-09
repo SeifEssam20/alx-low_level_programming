@@ -11,8 +11,8 @@
  * required permissions to write the file, the function returns -1. If
  * @filename is NULL, the function returns -1. If @text_content is NULL,
  * nothing is added to the file and 1 is returned if the file exists.
- * 
- * 
+ *
+ *
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
